@@ -8,6 +8,7 @@ import httplib2
 import keyring
 import sys
 import datetime
+import getpass
 
 
 
@@ -186,6 +187,17 @@ todayDate = datetime.date.today()
 
 FLAGS = gflags.FLAGS
 
+# MOD:
+_gtasks_user = getpass.getuser()
+_gtasks_key = keyring.get_password('gtasks_key', _gtasks_user)
+_gtasks_id = keyring.get_password('gtasks_id', _gtasks_user)
+_gtasks_secret = keyring.get_password('gtasks_secret', _gtasks_user)
+FLOW = OAuth2WebServerFlow(
+    client_id=_gtasks_id,
+    client_secret=_gtasks_secret,
+    scope='https://www.googleapis.com/auth/tasks',
+    user_agent='myTasks/v1')
+
 # Set up a Flow object to be used if we need to authenticate. This
 # sample uses OAuth 2.0, and we set up the OAuth2WebServerFlow with
 # the information it needs to authenticate. Note that it is called
@@ -193,11 +205,12 @@ FLAGS = gflags.FLAGS
 # applications
 # The client_id and client_secret are copied from the API Access tab on
 # the Google APIs Console
-FLOW = OAuth2WebServerFlow(
-    client_id='XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
-    client_secret=keyring.get_password('XXXXXXX', 'XXXXXXXX'),
-    scope='https://www.googleapis.com/auth/tasks',
-    user_agent='myTasks/v1')
+#FLOW = OAuth2WebServerFlow(
+    #client_id='XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+    #client_secret=keyring.get_password('XXXXXXX', 'XXXXXXXX'),
+    #scope='https://www.googleapis.com/auth/tasks',
+    #user_agent='myTasks/v1')
+
 
 # To disable the local server feature, uncomment the following line:
 FLAGS.auth_local_webserver = False
@@ -221,8 +234,11 @@ http = credentials.authorize(http)
 # Build a service object for interacting with the API. Visit
 # the Google APIs Console
 # to get a developerKey for your own application.
+#service = build(serviceName='tasks', version='v1', http=http,
+       #developerKey=keyring.get_password('XXXXXXXXX', 'XXXXXXXXX'))
+#MOD:
 service = build(serviceName='tasks', version='v1', http=http,
-       developerKey=keyring.get_password('XXXXXXXXX', 'XXXXXXXXX'))
+       developerKey=_gtasks_key)
 
 parser = argparse.ArgumentParser(usage="tasks [option] arg1 arg2 arg3", 
 	prog="myTasks v0.3")
