@@ -1,0 +1,29 @@
+status: 200
+x-xss-protection: 1; mode=block
+content-location: https://www.googleapis.com/tasks/v1/lists/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MTIzNzI3MjU2MDow/tasks?alt=json&key=AIzaSyBZUP9pgv2gHzn3XyfvuD9YC2EhsBl8sRs
+x-content-type-options: nosniff
+expires: Tue, 18 Sep 2012 20:30:35 GMT
+server: GSE
+etag: "M3V2EYzE8ZKSrA5JDxxyFB0Dbp4/LTExNDY3NTU2NDg",
+ "M3V2EYzE8ZKSrA5JDxxyFB0Dbp4/LTExNDY3NTU2NDg"
+cache-control: private, max-age=0, must-revalidate, no-transform
+date: Tue, 18 Sep 2012 20:30:35 GMT
+x-frame-options: SAMEORIGIN
+content-type: application/json; charset=UTF-8
+
+{
+ "kind": "tasks#tasks",
+ "etag": "\"M3V2EYzE8ZKSrA5JDxxyFB0Dbp4/LTExNDY3NTU2NDg\"",
+ "items": [
+  {
+   "kind": "tasks#task",
+   "id": "MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MTIzNzI3MjU2MDoyNTUxNzky",
+   "etag": "\"M3V2EYzE8ZKSrA5JDxxyFB0Dbp4/LTI1OTgzOTE3Mw\"",
+   "title": "",
+   "updated": "2012-09-11T16:37:41.000Z",
+   "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MTIzNzI3MjU2MDow/tasks/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MTIzNzI3MjU2MDoyNTUxNzky",
+   "position": "00000000001073741823",
+   "status": "needsAction"
+  }
+ ]
+}

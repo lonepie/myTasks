@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import argparse
+import os
 
 import gflags
 import httplib2
@@ -219,7 +220,12 @@ FLAGS.auth_local_webserver = False
 # flow. The Storage object will ensure that if successful the good
 # Credentials will get written back to a file.
 
-taskStore = "/PATH/TO/tasks.dat"
+#taskStore = "/PATH/TO/tasks.dat"
+_data_directory = os.path.expanduser("~") + "/.myTasks"
+_cache_directory = _data_directory + "/cache/"
+_dat_file = _data_directory + "/myTasks.dat"
+taskStore = _dat_file
+#taskStore = os.path.expanduser("~") + "/.myTasks.dat"
 storage = Storage(taskStore)
 credentials = storage.get()
 if credentials is None or credentials.invalid == True:
@@ -227,7 +233,7 @@ if credentials is None or credentials.invalid == True:
 
 # Create an httplib2.Http object to handle our HTTP requests and authorize it
 # with our good Credentials.
-http = httplib2.Http(cache=".cache")
+http = httplib2.Http(_cache_directory)
 http = credentials.authorize(http)
 
 
@@ -238,7 +244,7 @@ http = credentials.authorize(http)
        #developerKey=keyring.get_password('XXXXXXXXX', 'XXXXXXXXX'))
 #MOD:
 service = build(serviceName='tasks', version='v1', http=http,
-       developerKey=_gtasks_key)
+   developerKey=_gtasks_key)
 
 parser = argparse.ArgumentParser(usage="tasks [option] arg1 arg2 arg3", 
 	prog="myTasks v0.3")

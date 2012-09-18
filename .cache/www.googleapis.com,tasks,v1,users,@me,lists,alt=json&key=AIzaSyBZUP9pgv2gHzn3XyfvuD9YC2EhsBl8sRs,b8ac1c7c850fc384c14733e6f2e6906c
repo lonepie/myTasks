@@ -1,0 +1,39 @@
+status: 200
+x-xss-protection: 1; mode=block
+content-location: https://www.googleapis.com/tasks/v1/users/@me/lists?alt=json&key=AIzaSyBZUP9pgv2gHzn3XyfvuD9YC2EhsBl8sRs
+x-content-type-options: nosniff
+expires: Tue, 18 Sep 2012 21:13:54 GMT
+server: GSE
+etag: "M3V2EYzE8ZKSrA5JDxxyFB0Dbp4/6q-AYTHB37THsWJuNO_kxZHRcvQ"
+cache-control: private, max-age=0, must-revalidate, no-transform
+date: Tue, 18 Sep 2012 21:13:54 GMT
+x-frame-options: SAMEORIGIN
+content-type: application/json; charset=UTF-8
+
+{
+ "kind": "tasks#taskLists",
+ "etag": "\"M3V2EYzE8ZKSrA5JDxxyFB0Dbp4/6q-AYTHB37THsWJuNO_kxZHRcvQ\"",
+ "items": [
+  {
+   "kind": "tasks#taskList",
+   "id": "MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MDow",
+   "title": "Jonathan's list",
+   "updated": "2012-09-18T20:30:22.000Z",
+   "selfLink": "https://www.googleapis.com/tasks/v1/users/@me/lists/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MDow"
+  },
+  {
+   "kind": "tasks#taskList",
+   "id": "MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MTIzNzI3MjU2MDow",
+   "title": "Notes",
+   "updated": "2012-09-12T18:02:55.000Z",
+   "selfLink": "https://www.googleapis.com/tasks/v1/users/@me/lists/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MTIzNzI3MjU2MDow"
+  },
+  {
+   "kind": "tasks#taskList",
+   "id": "MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MTUwNDE0NTE1MDow",
+   "title": "Mobile List",
+   "updated": "2012-09-18T21:12:18.000Z",
+   "selfLink": "https://www.googleapis.com/tasks/v1/users/@me/lists/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MTUwNDE0NTE1MDow"
+  }
+ ]
+}

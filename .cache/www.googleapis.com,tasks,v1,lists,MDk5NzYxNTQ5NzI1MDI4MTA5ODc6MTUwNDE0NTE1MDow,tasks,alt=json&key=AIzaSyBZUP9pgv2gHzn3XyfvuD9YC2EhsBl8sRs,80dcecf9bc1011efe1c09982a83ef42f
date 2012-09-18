@@ -1,0 +1,51 @@
+status: 200
+x-xss-protection: 1; mode=block
+content-location: https://www.googleapis.com/tasks/v1/lists/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MTUwNDE0NTE1MDow/tasks?alt=json&key=AIzaSyBZUP9pgv2gHzn3XyfvuD9YC2EhsBl8sRs
+x-content-type-options: nosniff
+expires: Tue, 18 Sep 2012 21:13:54 GMT
+server: GSE
+etag: "M3V2EYzE8ZKSrA5JDxxyFB0Dbp4/LTYxNjk5MzE0NA"
+cache-control: private, max-age=0, must-revalidate, no-transform
+date: Tue, 18 Sep 2012 21:13:54 GMT
+x-frame-options: SAMEORIGIN
+content-type: application/json; charset=UTF-8
+
+{
+ "kind": "tasks#tasks",
+ "etag": "\"M3V2EYzE8ZKSrA5JDxxyFB0Dbp4/LTYxNjk5MzE0NA\"",
+ "items": [
+  {
+   "kind": "tasks#task",
+   "id": "MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MTUwNDE0NTE1MDoxMTU2NDkzNDk2",
+   "etag": "\"M3V2EYzE8ZKSrA5JDxxyFB0Dbp4/MTI1NTQ3OTgzNw\"",
+   "title": "Rx pickup & deodorant ",
+   "updated": "2012-09-18T21:12:18.000Z",
+   "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MTUwNDE0NTE1MDow/tasks/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MTUwNDE0NTE1MDoxMTU2NDkzNDk2",
+   "position": "00000000000268435455",
+   "status": "completed",
+   "due": "2012-09-12T00:00:00.000Z",
+   "completed": "2012-09-18T21:12:18.000Z"
+  },
+  {
+   "kind": "tasks#task",
+   "id": "MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MTUwNDE0NTE1MDoxNzI1ODYwMjA2",
+   "etag": "\"M3V2EYzE8ZKSrA5JDxxyFB0Dbp4/LTEwMjkyMDE5Mjg\"",
+   "title": "Ideal job",
+   "updated": "2012-09-11T04:22:09.000Z",
+   "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MTUwNDE0NTE1MDow/tasks/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MTUwNDE0NTE1MDoxNzI1ODYwMjA2",
+   "position": "00000000000536870911",
+   "notes": "Create our own cms, taking the good parts we've seen from others and implementing ourselves. Then making it extremely modular and well documented.",
+   "status": "needsAction"
+  },
+  {
+   "kind": "tasks#task",
+   "id": "MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MTUwNDE0NTE1MDoyOTM4ODA4NTg",
+   "etag": "\"M3V2EYzE8ZKSrA5JDxxyFB0Dbp4/LTE2NzY3NjM5NzQ\"",
+   "title": "",
+   "updated": "2012-09-18T20:27:30.000Z",
+   "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MTUwNDE0NTE1MDow/tasks/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MTUwNDE0NTE1MDoyOTM4ODA4NTg",
+   "position": "00000000000805306367",
+   "status": "needsAction"
+  }
+ ]
+}

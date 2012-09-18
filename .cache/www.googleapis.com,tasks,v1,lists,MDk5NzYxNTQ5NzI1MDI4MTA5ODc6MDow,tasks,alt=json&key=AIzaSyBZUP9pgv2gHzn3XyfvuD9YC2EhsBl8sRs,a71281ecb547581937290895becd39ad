@@ -1,0 +1,69 @@
+status: 200
+x-xss-protection: 1; mode=block
+content-location: https://www.googleapis.com/tasks/v1/lists/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MDow/tasks?alt=json&key=AIzaSyBZUP9pgv2gHzn3XyfvuD9YC2EhsBl8sRs
+x-content-type-options: nosniff
+expires: Tue, 18 Sep 2012 20:30:35 GMT
+server: GSE
+etag: "M3V2EYzE8ZKSrA5JDxxyFB0Dbp4/LTYxOTUwOTIwOA"
+cache-control: private, max-age=0, must-revalidate, no-transform
+date: Tue, 18 Sep 2012 20:30:35 GMT
+x-frame-options: SAMEORIGIN
+content-type: application/json; charset=UTF-8
+
+{
+ "kind": "tasks#tasks",
+ "etag": "\"M3V2EYzE8ZKSrA5JDxxyFB0Dbp4/LTYxOTUwOTIwOA\"",
+ "items": [
+  {
+   "kind": "tasks#task",
+   "id": "MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MDo3ODYxMjYxOTU",
+   "etag": "\"M3V2EYzE8ZKSrA5JDxxyFB0Dbp4/NjAzNjQxODU2\"",
+   "title": "http://www.adminer.org/en/",
+   "updated": "2012-08-29T04:04:56.000Z",
+   "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MDow/tasks/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MDo3ODYxMjYxOTU",
+   "position": "00000000000000003071",
+   "status": "needsAction"
+  },
+  {
+   "kind": "tasks#task",
+   "id": "MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MDoxMzkwMzk3Nzkx",
+   "etag": "\"M3V2EYzE8ZKSrA5JDxxyFB0Dbp4/MTM5NTQwNjIxMQ\"",
+   "title": "Kevinlrose@gmail.com",
+   "updated": "2012-06-22T21:23:14.000Z",
+   "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MDow/tasks/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MDoxMzkwMzk3Nzkx",
+   "position": "00000000000000012287",
+   "status": "needsAction"
+  },
+  {
+   "kind": "tasks#task",
+   "id": "MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MDoxNTk4MTU1NTIz",
+   "etag": "\"M3V2EYzE8ZKSrA5JDxxyFB0Dbp4/OTU2NzkxOTkz\"",
+   "title": "keyboard macros for tribes:ascend voice comm",
+   "updated": "2012-04-12T20:58:41.000Z",
+   "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MDow/tasks/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MDoxNTk4MTU1NTIz",
+   "position": "00000000000000786431",
+   "status": "needsAction"
+  },
+  {
+   "kind": "tasks#task",
+   "id": "MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MDoxNTUzMjI2Mw",
+   "etag": "\"M3V2EYzE8ZKSrA5JDxxyFB0Dbp4/NTY0NTUxMjgz\"",
+   "title": "Cuban restaurant on N. 5th street",
+   "updated": "2012-04-14T19:55:53.000Z",
+   "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MDow/tasks/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MDoxNTUzMjI2Mw",
+   "position": "00000000000000933887",
+   "notes": "\nSang kee on Lancaster ave by whole foods\nCrispy chicken \n\n",
+   "status": "needsAction"
+  },
+  {
+   "kind": "tasks#task",
+   "id": "MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MDoxMTkwNjMyMTEz",
+   "etag": "\"M3V2EYzE8ZKSrA5JDxxyFB0Dbp4/LTE2MDA2NzA4ODY\"",
+   "title": "",
+   "updated": "2012-09-18T20:30:22.000Z",
+   "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MDow/tasks/MDk5NzYxNTQ5NzI1MDI4MTA5ODc6MDoxMTkwNjMyMTEz",
+   "position": "00000000000000946175",
+   "status": "needsAction"
+  }
+ ]
+}
